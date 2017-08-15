@@ -1,6 +1,7 @@
-﻿using System;
+﻿using Finanseed.Domain.Entities.Interfaces;
+using System;
 
-namespace Finanseed.Presentation.Prototype.Models
+namespace Finanseed.Domain.Entities
 {
     public class FinanceTransaction : IFinanceTransaction
     {

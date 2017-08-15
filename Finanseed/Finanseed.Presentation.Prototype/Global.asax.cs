@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Finanseed.Presentation.Prototype.IoC;
+using SimpleInjector;
+using SimpleInjector.Integration.Web;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,6 +15,11 @@ namespace Finanseed.Presentation.Prototype
     {
         protected void Application_Start()
         {
+            var container = new Container();
+            container.Options.DefaultLifestyle = new WebRequestLifestyle();
+            SimpleInjectorContainer.RegisterRepositories(container);
+            container.Verify();
+            DependencyResolver.SetResolver(container);
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);

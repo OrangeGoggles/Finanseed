@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Finanseed.Presentation.Prototype.DAL.Interfaces;
+using Finanseed.Presentation.Prototype.Models;
+using Microsoft.AspNet.Identity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,6 +12,11 @@ namespace Finanseed.Presentation.Prototype.Controllers
     [Authorize]
     public class WalletController : Controller
     {
+        public IWalletRepository WalletRepository { get; set; }
+        public WalletController(IWalletRepository walletRepository)
+        {
+            WalletRepository = walletRepository;
+        }
         // GET: Wallet
         public ActionResult Index()
         {
@@ -24,23 +32,8 @@ namespace Finanseed.Presentation.Prototype.Controllers
         // GET: Wallet/Create
         public ActionResult Create()
         {
-            return View();
-        }
-
-        // POST: Wallet/Create
-        [HttpPost]
-        public ActionResult Create(FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add insert logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
+            var wallet = WalletRepository.Add(new Wallet() { OwnerID = Guid.Parse(User.Identity.GetUserId()), CurrentBalance = 0, RealBalance = 0 });
+            return RedirectToAction("Details",new { id = wallet.WalletID});
         }
 
         // GET: Wallet/Edit/5
