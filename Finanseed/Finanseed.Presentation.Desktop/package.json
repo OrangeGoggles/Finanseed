@@ -1,0 +1,21 @@
+{
+  "name": "finanseed.presentation.desktop",
+  "version": "0.0.0",
+  "description": "Finanseed.Presentation.Desktop",
+  "main": "main.js",
+  "author": {
+    "name": "vinicius.campos"
+  },
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron-packager": "^5.0.1",
+    "electron-prebuilt": "^0.30.3"
+  },
+  "dependencies": {
+    "electron": "^1.7.5",
+    "electron-packager": "^5.2.1",
+    "nconf": "^0.7.2"
+  }
+}

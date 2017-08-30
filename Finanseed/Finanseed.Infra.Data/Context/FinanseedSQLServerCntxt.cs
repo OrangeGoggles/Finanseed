@@ -16,7 +16,7 @@ namespace Finanseed.Infra.Data.Context
         public DbSet<Bag> Bag { get; set; }
         public DbSet<Wallet> Wallet { get; set; }
         public DbSet<Card> Card { get; set; }
-        public DbSet<FinanceTransaction> FinanceTransaction { get; set; }
+        public DbSet<FinancialTransaction> FinanceTransaction { get; set; }
         public DbSet<TransactionType> TransactionType { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

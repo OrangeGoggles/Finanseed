@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Finanseed.Presentation.Prototype.Models
+namespace Finanseed.Domain.Entities
 {
     public class Wallet
     {
@@ -12,11 +12,10 @@ namespace Finanseed.Presentation.Prototype.Models
         public Guid WalletID { get; set; }
         public float RealBalance { get; set; }
         public float CurrentBalance { get; set; }
-        public IEnumerable<IFinanceTransaction> InputTransactions { get; set; }
-        public IEnumerable<IFinanceTransaction> OutputTransactions { get; set; }
-        public IEnumerable<Bag> Bags { get; set; }
-        public IEnumerable<CreditCard> CreditCards { get; set; }
+        public virtual IEnumerable<FinancialTransaction> FinancialTransactions { get; set; }
+        public virtual IEnumerable<Bag> Bags { get; set; }
+        public virtual IEnumerable<Card> CreditCards { get; set; }
         public Guid OwnerID { get; set; }
-        public virtual ApplicationUser ApplicationUser { get; set; }
+        //public virtual ApplicationUser ApplicationUser { get; set; }
     }
 }
