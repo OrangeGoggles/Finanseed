@@ -2,7 +2,7 @@
 
 namespace Finanseed.Domain.Entities
 {
-    public class CreditCard
+    public class Card
     {
         public float Limit { get; set; }
         public float Balance { get; set; }
