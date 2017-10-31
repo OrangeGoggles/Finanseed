@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finanseed.Infra.Data", "Fin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finanseed.Domain", "Finanseed.Domain\Finanseed.Domain.csproj", "{AF37578E-99F9-4BE7-B740-872A31A1A5D5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finanseed.Infra.CrossCutting.IoC", "Finanseed.Infra.CrossCutting.IoC\Finanseed.Infra.CrossCutting.IoC.csproj", "{8F4D845C-B110-4A1D-A1F0-B53C0D82598E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{AF37578E-99F9-4BE7-B740-872A31A1A5D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF37578E-99F9-4BE7-B740-872A31A1A5D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF37578E-99F9-4BE7-B740-872A31A1A5D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F4D845C-B110-4A1D-A1F0-B53C0D82598E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F4D845C-B110-4A1D-A1F0-B53C0D82598E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F4D845C-B110-4A1D-A1F0-B53C0D82598E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F4D845C-B110-4A1D-A1F0-B53C0D82598E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +70,7 @@ Global
 		{C8CE480B-28C0-4D3E-AF0D-7D76964C9A05} = {BF7EAA8E-323C-49EA-A179-7A14057D6560}
 		{C5A650AD-29B0-46F3-A4E9-7B0B42179C2A} = {C4600D1E-955B-4483-B044-3AAEE0E6575C}
 		{AF37578E-99F9-4BE7-B740-872A31A1A5D5} = {214831DC-D2C5-473B-8CE9-16D2FF8A26AC}
+		{8F4D845C-B110-4A1D-A1F0-B53C0D82598E} = {40AABAC4-39C2-41AD-A429-FFC7EAA28235}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {93C4DAF9-5C5B-41FC-8224-9610E092B92E}
