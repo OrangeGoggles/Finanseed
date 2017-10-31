@@ -1,3 +1,0 @@
-﻿# Finanseed.Presentation.Desktop
-
-
