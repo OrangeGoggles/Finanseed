@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Finanseed.Infra.CrossCutting.Identity.ViewModel.Account
 {
@@ -24,5 +20,14 @@ namespace Finanseed.Infra.CrossCutting.Identity.ViewModel.Account
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+
+        [Required]
+        [Display(Name = "Name")]
+        public string UserName { get; set; }
+
+
+        [Required]
+        [Display(Name = "Birthday")]
+        public string Birthday { get; set; }
     }
 }
