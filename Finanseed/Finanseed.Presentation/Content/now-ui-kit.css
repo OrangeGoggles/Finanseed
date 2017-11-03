@@ -1591,8 +1591,9 @@
     }
 
 .btn-primary {
-    background-color: #0fe86a;
+    background-color: #0CE86A;
     color: #FFFFFF;
+    border-color: #FFFFFF;
 }
 
     .btn-primary:hover,
@@ -1992,7 +1993,7 @@
 
 .btn-neutral {
     background-color: #FFFFFF;
-    color: #f96332;
+    color: #0CE86A;
 }
 
     .btn-neutral:hover,
@@ -3118,9 +3119,8 @@ small {
 }
 
 a {
-    color: #f96332;
+    color: #03E850;
 }
-
     a:hover,
     a:focus {
         color: #f96332;
@@ -5034,11 +5034,19 @@ Created using IcoMoon - icomoon.io
     }
 
     .card[data-background-color="green"] {
-        background-color: #18ce0f;
+        background-color: #03E850;
+    }
+
+    .card[data-background-color="white"] {
+        background-color: #FFFFFF;
+    }
+
+    .card[data-background-color="dark"] {
+        background-color: #262626;
     }
 
 .card-signup {
-    max-width: 350px;
+    max-width: 400px;
     margin: 0 auto;
 }
 
@@ -5966,9 +5974,9 @@ Created using IcoMoon - icomoon.io
     }
 
     [data-background-color] .btn.btn-simple {
-        background-color: transparent;
-        border-color: rgba(255, 255, 255, 0.5);
-        color: #FFFFFF;
+        background-color: #ffffff;
+        border-color: #03E850;
+        color: #03E850;
     }
 
         [data-background-color] .btn.btn-simple:hover,
@@ -5977,6 +5985,7 @@ Created using IcoMoon - icomoon.io
         [data-background-color] .btn.btn-simple:active {
             background-color: transparent;
             border-color: #FFFFFF;
+            color: #FFFFFF;
         }
 
     [data-background-color] .nav-tabs > .nav-item > .nav-link i.now-ui-icons {
