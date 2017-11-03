@@ -19,7 +19,41 @@ namespace Finanseed.Infra.CrossCutting.Identity.Context
                 .Property(p => p.Id)
                 .HasColumnName("ID");
             modelBuilder.Entity<ApplicationUser>()
-                .Property(x => x.Birthday);
+                .Property(x => x.Birthday)
+                .IsRequired();
+            modelBuilder.Entity<ApplicationUser>()
+                .Property(x => x.AccessFailedCount)
+                .IsRequired();
+            modelBuilder.Entity<ApplicationUser>()
+                .Property(x => x.Email)
+                .IsRequired();
+            modelBuilder.Entity<ApplicationUser>()
+                .Property(x => x.EmailConfirmed)
+                .IsRequired();
+            modelBuilder.Entity<ApplicationUser>()
+                .Property(x => x.LockoutEnabled)
+                .IsRequired();
+            modelBuilder.Entity<ApplicationUser>()
+                .Property(x => x.LockoutEndDateUtc)
+                .IsOptional();
+            modelBuilder.Entity<ApplicationUser>()
+                .Property(x => x.PasswordHash)
+                .IsRequired();
+            modelBuilder.Entity<ApplicationUser>()
+                .Property(x => x.PhoneNumber)
+                .IsRequired();
+            modelBuilder.Entity<ApplicationUser>()
+                .Property(x => x.PhoneNumberConfirmed)
+                .IsRequired();
+            modelBuilder.Entity<ApplicationUser>()
+                .Property(x => x.SecurityStamp)
+                .IsRequired();
+            modelBuilder.Entity<ApplicationUser>()
+                .Property(x => x.TwoFactorEnabled)
+                .IsRequired();
+            modelBuilder.Entity<ApplicationUser>()
+                .Property(x => x.UserName)
+                .IsRequired();
 
 
         }
