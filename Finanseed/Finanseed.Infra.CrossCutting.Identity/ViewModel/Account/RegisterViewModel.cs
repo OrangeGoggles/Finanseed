@@ -29,5 +29,8 @@ namespace Finanseed.Infra.CrossCutting.Identity.ViewModel.Account
         [Required]
         [Display(Name = "Birthday")]
         public string Birthday { get; set; }
+
+        [Required]
+        public string PhoneNumber { get; set; }
     }
 }

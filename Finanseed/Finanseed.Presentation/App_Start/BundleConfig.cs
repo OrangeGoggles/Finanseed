@@ -29,9 +29,14 @@ namespace Finanseed.Presentation
                 "~/Scripts/now-ui-kit.js"
                 ));
 
+            bundles.Add(new ScriptBundle("~/bundles/toastr")
+                .Include("~/Scripts/toastr.min.js")
+                );
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.min.css",
                       "~/Content/now-ui-kit.css",
+                      "~/Content/toastr.min.css",
                       "~/Content/site.css"));
         }
     }

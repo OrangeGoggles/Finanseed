@@ -40,8 +40,8 @@
                 </div>
             </div>
             <div class="navbar-translate">
-                <a class="navbar-brand" href="http://demos.creative-tim.com/now-ui-kit/index.html" rel="tooltip" title="Designed by Invision. Coded by Creative Tim" data-placement="bottom" target="_blank">
-                    Now Ui Kit
+                <a class="navbar-brand" href="@Url.Action("Index")" rel="tooltip" title="Designed by Invision. Coded by Creative Tim" data-placement="bottom" target="_blank">
+                    Finanseed
                 </a>
                 <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-bar bar1"></span>
@@ -88,7 +88,6 @@
                     @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
                     {
                         @Html.AntiForgeryToken()
-                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
                         <div class="header text-center">
                             <h4 class="title title-up">Sign Up</h4>
                             <div class="social-line">
@@ -108,85 +107,68 @@
                                 <span class="input-group-addon">
                                     <i class="now-ui-icons users_circle-08"></i>
                                 </span>
-                                @Html.TextBoxFor(m => m.UserName, new { @class = "form-control" })
+                                @Html.TextBoxFor(m => m.UserName, new { @class = "form-control", @placeholder="Name"})
                                 @Html.ValidationMessageFor(m => m.UserName, "", new { @class = "text-danger" })
                             </div>
                             <div class="input-group form-group-no-border input-lg">
                                 <span class="input-group-addon">
-                                    <i class="now-ui-icons users_circle-08"></i>
+                                    <i class="now-ui-icons ui-1_calendar-60"></i>
                                 </span>
-                                @Html.TextBoxFor(m => m.Birthday, new { @class = "form-control" })
+                                @Html.TextBoxFor(m => m.Birthday, new { @class = "form-control date-picker", @placeholder = "Birthday" })
                                 @Html.ValidationMessageFor(m => m.Birthday, "", new { @class = "text-danger" })
                             </div>
                             <div class="input-group form-group-no-border input-lg">
                                 <span class="input-group-addon">
-                                    <i class="now-ui-icons users_circle-08"></i>
+                                    <i class="now-ui-icons ui-1_email-85"></i>
                                 </span>
-                                @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                                @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @placeholder = "E-mail" })
                                 @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
                             </div>
                             <div class="input-group form-group-no-border input-lg">
                                 <span class="input-group-addon">
-                                    <i class="now-ui-icons text_caps-small"></i>
+                                    <i class="now-ui-icons ui-1_lock-circle-open""></i>
                                 </span>
-                                @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                                @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeholder = "Password" })
                                 @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
                             </div>
                             <div class="input-group form-group-no-border input-lg">
                                 <span class="input-group-addon">
-                                    <i class="now-ui-icons text_caps-small"></i>
+                                    <i class="now-ui-icons ui-1_lock-circle-open""></i>
                                 </span>
-                                @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+                                @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control", @placeholder = "Confirm Password" })
                                 @Html.ValidationMessageFor(m => m.ConfirmPassword, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="input-group form-group-no-border input-lg">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons"></i>
+                                </span>
+                                @Html.PasswordFor(m => m.PhoneNumber, new { @class = "form-control", @placeholder = "Phone Number" })
+                                @Html.ValidationMessageFor(m => m.PhoneNumber, "", new { @class = "text-danger" })
                             </div>
                         </div>
                         <div class="footer text-center">
-                            <a href="#pablo" class="btn btn-primary btn-simple btn-round btn-lg btn-block">Register</a>
+                            <button type="submit" class="btn btn-primary btn-simple btn-round btn-lg">Register</button>
                         </div>
                     }
                 </div>
             </div>
         </div>
-        <footer class="footer">
-            <div class="container">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="https://www.creative-tim.com">
-                                Creative Tim
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://presentation.creative-tim.com">
-                                About Us
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://blog.creative-tim.com">
-                                Blog
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/creativetimofficial/now-ui-kit/blob/master/LICENSE.md">
-                                MIT License
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="copyright">
-                    &copy;
-                    <script>
-                        document.write(new Date().getFullYear())
-                    </script>, Designed by
-                    <a href="http://www.invisionapp.com" target="_blank">Invision</a>. Coded by
-                    <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
-                </div>
-            </div>
-        </footer>
     </div>
+    <!--   Core JS Files   -->
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/toastr")
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".date-picker").datepicker();
+        })
+    </script>
+    <script id="partial-js-container" data-ajax-update="true">
+     var message = @Html.Raw(Json.Encode(((@Html.ValidationSummary()==null)?"":@Html.ValidationSummary().ToHtmlString())));
+                if (message.length > 0) {
+            toastr.error(message);
+        }
+    </script>
 </body>
-<!--   Core JS Files   -->
-@Scripts.Render("~/bundles/jquery")
-@Scripts.Render("~/bundles/bootstrap")
-@Scripts.Render("~/bundles/jqueryval")
 </html>

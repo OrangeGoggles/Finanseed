@@ -1,14 +1,11 @@
 ﻿using System;
-using System.Globalization;
 using System.Linq;
-using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using Finanseed.Presentation.Models;
 using Finanseed.Infra.CrossCutting.Identity.ViewModel.Account;
 using Finanseed.Infra.CrossCutting.Identity.Entities;
 
@@ -153,25 +150,35 @@ namespace Finanseed.Presentation.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser {
-                    UserName = model.UserName,
-                    Email = model.Email,
-                    Birthday = DateTime.Parse(model.Birthday)
-                };
-                var result = await UserManager.CreateAsync(user, model.Password);
-                if (result.Succeeded)
+                try
                 {
-                    await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
+                    var user = new ApplicationUser
+                    {
+                        UserName = model.UserName,
+                        Email = model.Email,
+                        Birthday = DateTime.Parse(model.Birthday),
+                        PhoneNumber = model.PhoneNumber
+                    };
+                    var result = await UserManager.CreateAsync(user, model.Password);
+                    if (result.Succeeded)
+                    {
+                        await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
 
-                    // For more information on how to enable account confirmation and password reset please visit http://go.microsoft.com/fwlink/?LinkID=320771
-                    // Send an email with this link
-                    // string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
-                    // var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
-                    // await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
+                        // For more information on how to enable account confirmation and password reset please visit http://go.microsoft.com/fwlink/?LinkID=320771
+                        // Send an email with this link
+                        // string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
+                        // var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
+                        // await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
 
-                    return RedirectToAction("Index", "Home");
+                        return RedirectToAction("Principal", "Desk");
+                    }
+                    AddErrors(result);
                 }
-                AddErrors(result);
+                catch (Exception ex)
+                {
+
+                    AddErrors(new IdentityResult(errors: ex.Message));
+                }
             }
 
             // If we got this far, something failed, redisplay form
