@@ -207,6 +207,7 @@
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\SimpleAuthorizationServerProvider.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -300,6 +301,10 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Finanseed.Domain\Finanseed.Domain.csproj">
+      <Project>{AF37578E-99F9-4BE7-B740-872A31A1A5D5}</Project>
+      <Name>Finanseed.Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Finanseed.Infra.CrossCutting.Identity\Finanseed.Infra.CrossCutting.Identity.csproj">
       <Project>{c8ce480b-28c0-4d3e-af0d-7d76964c9a05}</Project>
       <Name>Finanseed.Infra.CrossCutting.Identity</Name>

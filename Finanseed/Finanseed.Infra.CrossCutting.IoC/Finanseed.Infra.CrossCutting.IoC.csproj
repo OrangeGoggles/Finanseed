@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="SimpleInjector, Version=4.0.12.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInjector.4.0.12\lib\net45\SimpleInjector.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,7 +43,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ContainerConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Finanseed.Application\Finanseed.Application.csproj">
+      <Project>{9B2A2D0A-3F18-49F1-BEF5-828E302B5B4F}</Project>
+      <Name>Finanseed.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Finanseed.Domain\Finanseed.Domain.csproj">
+      <Project>{AF37578E-99F9-4BE7-B740-872A31A1A5D5}</Project>
+      <Name>Finanseed.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Finanseed.Infra.Data\Finanseed.Infra.Data.csproj">
+      <Project>{C5A650AD-29B0-46F3-A4E9-7B0B42179C2A}</Project>
+      <Name>Finanseed.Infra.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

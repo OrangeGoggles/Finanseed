@@ -19,19 +19,11 @@ namespace Finanseed.Infra.Data.EntityMap
                 .IsRequired();
             Property(x => x.EmailConfirmed)
                 .IsRequired();
-            Property(x => x.LockoutEnabled)
-                .IsRequired();
-            Property(x => x.LockoutEndDateUtc)
-                .IsOptional();
             Property(x => x.PasswordHash)
                 .IsRequired();
             Property(x => x.PhoneNumber)
                 .IsRequired();
             Property(x => x.PhoneNumberConfirmed)
-                .IsRequired();
-            Property(x => x.SecurityStamp)
-                .IsRequired();
-            Property(x => x.TwoFactorEnabled)
                 .IsRequired();
             Property(x => x.UserName)
                 .IsRequired();
