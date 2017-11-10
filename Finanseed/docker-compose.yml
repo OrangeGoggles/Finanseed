@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  finanseed.coreservice:
+    image: finanseed.coreservice
+    build:
+      context: ./Finanseed.CoreService
+      dockerfile: Dockerfile

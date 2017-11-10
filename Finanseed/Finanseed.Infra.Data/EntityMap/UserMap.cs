@@ -1,32 +1,33 @@
 ﻿using Finanseed.Domain.Entities;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Data.Entity.ModelConfiguration;
+using Finanseed.Infra.Data.Extensions;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Finanseed.Infra.Data.EntityMap
 {
-    public class UserMap : EntityTypeConfiguration<User>
+    internal class UserMap : DbEntityConfiguration<User>
     {
-        public UserMap()
+        public override void Configure(EntityTypeBuilder<User> obj)
         {
-            Property(x => x.ID)
-                .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity)
+            obj.Property(x => x.ID)
+                .ValueGeneratedOnAdd()
                 .IsRequired();
-            Property(x => x.Birthday)
+            obj.Property(x => x.Birthday)
                 .IsRequired();
-            Property(x => x.AccessFailedCount)
+            obj.Property(x => x.AccessFailedCount)
                 .IsRequired();
-            Property(x => x.Email)
+            obj.Property(x => x.Email)
                 .IsRequired();
-            Property(x => x.EmailConfirmed)
+            obj.Property(x => x.EmailConfirmed)
                 .IsRequired();
-            Property(x => x.PasswordHash)
+            obj.Property(x => x.PasswordHash)
                 .IsRequired();
-            Property(x => x.PhoneNumber)
+            obj.Property(x => x.PhoneNumber)
                 .IsRequired();
-            Property(x => x.PhoneNumberConfirmed)
+            obj.Property(x => x.PhoneNumberConfirmed)
                 .IsRequired();
-            Property(x => x.UserName)
+            obj.Property(x => x.UserName)
                 .IsRequired();
-    }
+        }
     }
 }

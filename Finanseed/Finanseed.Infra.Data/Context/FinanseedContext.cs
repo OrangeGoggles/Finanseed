@@ -1,23 +1,26 @@
 ﻿using Finanseed.Domain.Entities;
 using Finanseed.Infra.Data.EntityMap;
-using System.Data.Entity;
+using Microsoft.EntityFrameworkCore;
 
 namespace Finanseed.Infra.Data.Context
 {
     public class FinanseedContext : DbContext
     {
-        public FinanseedContext() : base("Name=connFinanseed")
+        public FinanseedContext(DbContextOptions<FinanseedContext> options) : base(options)
         {
-            Configuration.LazyLoadingEnabled = false;
         }
         public DbSet<User> User { get; set; }
         public DbSet<Wallet> Wallet { get; set; }
 
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            
+        }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Configurations.Add(new UserMap());
-            modelBuilder.Configurations.Add(new WalletMap());
+            modelBuilder.ApplyConfiguration(new UserMap());
+            modelBuilder.ApplyConfiguration(new WalletMap());
         }
     }
 }

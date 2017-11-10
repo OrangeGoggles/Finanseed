@@ -1,4 +1,5 @@
-﻿using Microsoft.Owin;
+﻿using Finanseed.Services.Security;
+using Microsoft.Owin;
 using Microsoft.Owin.Security.OAuth;
 using Owin;
 using System;
@@ -25,7 +26,7 @@ namespace Finanseed.Services
                 AllowInsecureHttp = true,
                 TokenEndpointPath = new PathString("/token"),
                 AccessTokenExpireTimeSpan = TimeSpan.FromDays(1),
-                Provider = new SimpleAuthorizationServerProvider()
+                //Provider = new SimpleAuthorizationServerProvider()
             };
             app.UseOAuthAuthorizationServer(OAuthServerOptions);
             app.UseOAuthBearerAuthentication(new OAuthBearerAuthenticationOptions());

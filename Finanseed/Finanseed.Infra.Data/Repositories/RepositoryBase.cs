@@ -1,8 +1,8 @@
 ﻿using Finanseed.Domain.Repositories;
 using Finanseed.Infra.Data.Context;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
@@ -20,14 +20,14 @@ namespace Finanseed.Infra.Data.Repositories
         {
             var response = DB.Set<T>().Add(obj);
             DB.SaveChanges();
-            return response;
+            return response.Entity;
         }
 
         public async Task<T> AddAsync(T obj)
         {
             var response = DB.Set<T>().Add(obj);
             await DB.SaveChangesAsync();
-            return response;
+            return response.Entity;
         }
 
         public void Dispose()

@@ -4,11 +4,6 @@ using Finanseed.Domain.Services;
 using Finanseed.Infra.Data.Context;
 using Finanseed.Infra.Data.Repositories;
 using SimpleInjector;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Finanseed.Infra.CrossCutting.IoC
 {

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Finanseed.Domain.Entities;
 using Finanseed.Domain.Repositories;
 using System.Linq.Expressions;
+using System.Linq;
 
 namespace Finanseed.Application
 {
@@ -12,16 +13,26 @@ namespace Finanseed.Application
         #region [Properties]
         protected IUserRepository UserRepository;
         #endregion
+
         #region [Constructor]
         public UserService(IUserRepository userRepository)
         {
             UserRepository = userRepository;
         }
         #endregion
+
         #region [Methods]
         public User Add(User obj)
         {
             return UserRepository.Add(obj);
+        }
+
+        public User Authenticate(string email, string password)
+        {
+            return UserRepository.Get(
+                x =>
+                x.Email == email &&
+                x.PasswordHash == password).FirstOrDefault();
         }
 
         public User Get(Guid id)
@@ -47,7 +58,7 @@ namespace Finanseed.Application
         public void Update(User obj)
         {
             UserRepository.Update(obj);
-        } 
+        }
         #endregion
     }
 }

@@ -1,27 +1,32 @@
 ﻿using Finanseed.Domain.Entities;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Data.Entity.ModelConfiguration;
+using Finanseed.Infra.Data.Extensions;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Finanseed.Infra.Data.EntityMap
 {
-    public class WalletMap : EntityTypeConfiguration<Wallet>
+    internal class WalletMap : DbEntityConfiguration<Wallet>
     {
         public WalletMap()
         {
-            Property(x => x.ID)
-                .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity)
+           
+        }
+
+        public override void Configure(EntityTypeBuilder<Wallet> obj)
+        {
+            obj.Property(x => x.ID)
+               .ValueGeneratedOnAdd()
+               .IsRequired();
+
+            obj.Property(x => x.Name)
                 .IsRequired();
 
-            Property(x => x.Name)
+            obj.Property(x => x.Balance)
                 .IsRequired();
 
-            Property(x => x.Balance)
+            obj.Property(x => x.CreationDate)
                 .IsRequired();
 
-            Property(x => x.CreationDate)
-                .IsRequired();
-
-            HasRequired(x => x.Owner)
+            obj.HasRequired(x => x.Owner)
                 .WithMany(x => x.Wallets).
                 HasForeignKey(x => x.OwnerID);
         }
