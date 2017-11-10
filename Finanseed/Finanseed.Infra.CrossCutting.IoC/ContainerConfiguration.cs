@@ -11,10 +11,12 @@ namespace Finanseed.Infra.CrossCutting.IoC
     {
         public static Container Register(Container container)
         {
-            container.Register<FinanseedContext>(Lifestyle.Singleton);
-            container.Register<IUserRepository, UserRepository>(Lifestyle.Singleton);
-            container.Register<IUserService, UserService>(Lifestyle.Transient);
-            
+            container.Register(() => {    
+                return new FinanseedContextFactory().CreateDbContext();
+            },Lifestyle.Singleton);
+            container.RegisterSingleton<IUserRepository, UserRepository>();
+            container.Register<IUserService, UserService>();
+
             return container;
         }
     }

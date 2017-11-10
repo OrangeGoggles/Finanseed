@@ -26,7 +26,7 @@ namespace Finanseed.Infra.Data.EntityMap
             obj.Property(x => x.CreationDate)
                 .IsRequired();
 
-            obj.HasRequired(x => x.Owner)
+            obj.HasOne(x => x.Owner)
                 .WithMany(x => x.Wallets).
                 HasForeignKey(x => x.OwnerID);
         }

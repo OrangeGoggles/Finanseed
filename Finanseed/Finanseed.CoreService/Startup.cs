@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 using SimpleInjector;
 using SimpleInjector.Lifestyles;
 using Microsoft.AspNetCore.Http;
@@ -26,6 +25,7 @@ namespace Finanseed.CoreService
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            IntegrateSimpleInjector(services);
         }
 
         private void IntegrateSimpleInjector(IServiceCollection services)
@@ -34,7 +34,6 @@ namespace Finanseed.CoreService
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddSingleton<IControllerActivator>(new SimpleInjectorControllerActivator(container));
-
             services.EnableSimpleInjectorCrossWiring(container);
             services.UseSimpleInjectorAspNetRequestScoping(container);
         }
@@ -59,7 +58,7 @@ namespace Finanseed.CoreService
 
             ContainerConfiguration.Register(container);
 
-            container.CrossWire<ILoggerFactory>(app);
+            //container.CrossWire<ILoggerFactory>(app);
 
             // NOTE: Do prevent cross-wired instances as much as possible.
             // See: https://simpleinjector.org/blog/2016/07/
