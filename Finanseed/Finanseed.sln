@@ -33,8 +33,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finanseed.CoreService", "Fi
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{6DBD4382-1683-4C40-B0B6-E995C93D0A59}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7 - Specs", "7 - Specs", "{0FBE7B86-EAEE-4805-93E9-87289C8A81F6}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finanseed.DomainTests", "Finanseed.DomainTests\Finanseed.DomainTests.csproj", "{519797A6-47A4-41B0-9FF6-186C5A7EBDE8}"
 EndProject
 Global
