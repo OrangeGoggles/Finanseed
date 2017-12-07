@@ -31,8 +31,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finanseed.Application", "Fi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finanseed.CoreService", "Finanseed.CoreService\Finanseed.CoreService.csproj", "{78BEF6A6-92E8-4303-BE5A-909C5C827F9C}"
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{6DBD4382-1683-4C40-B0B6-E995C93D0A59}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finanseed.DomainTests", "Finanseed.DomainTests\Finanseed.DomainTests.csproj", "{519797A6-47A4-41B0-9FF6-186C5A7EBDE8}"
 EndProject
 Global
@@ -61,10 +59,6 @@ Global
 		{78BEF6A6-92E8-4303-BE5A-909C5C827F9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78BEF6A6-92E8-4303-BE5A-909C5C827F9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78BEF6A6-92E8-4303-BE5A-909C5C827F9C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6DBD4382-1683-4C40-B0B6-E995C93D0A59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6DBD4382-1683-4C40-B0B6-E995C93D0A59}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6DBD4382-1683-4C40-B0B6-E995C93D0A59}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6DBD4382-1683-4C40-B0B6-E995C93D0A59}.Release|Any CPU.Build.0 = Release|Any CPU
 		{519797A6-47A4-41B0-9FF6-186C5A7EBDE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{519797A6-47A4-41B0-9FF6-186C5A7EBDE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{519797A6-47A4-41B0-9FF6-186C5A7EBDE8}.Release|Any CPU.ActiveCfg = Release|Any CPU

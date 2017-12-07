@@ -1,6 +1,5 @@
 ﻿using Finanseed.Domain.Entities;
 using Finanseed.Infra.Data.Extensions;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Finanseed.Infra.Data.EntityMap
@@ -9,7 +8,7 @@ namespace Finanseed.Infra.Data.EntityMap
     {
         public override void Configure(EntityTypeBuilder<User> obj)
         {
-            obj.Property(x => x.ID)
+            obj.Property(x => x.Id)
                 .ValueGeneratedOnAdd()
                 .IsRequired();
             obj.Property(x => x.Birthday)
