@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Finanseed.Domain.Common;
+using System;
 
 namespace Finanseed.Domain.Entities
 {
