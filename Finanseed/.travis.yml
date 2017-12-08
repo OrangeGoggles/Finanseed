@@ -1,0 +1,11 @@
+language: csharp
+solution: Finanseed/finanseed.sln
+mono:
+  - latest
+branches:
+  only:
+    - master
+install:
+  - nuget restore Finanseed/finanseed.sln
+script:
+- xbuild /p:Configuration=Release Finanseed/finanseed.sln
