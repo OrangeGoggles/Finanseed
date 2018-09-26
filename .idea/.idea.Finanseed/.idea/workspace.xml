@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="eef502bf-dd9b-474e-af5c-4a2a17a90175" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Finanseed/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Finanseed/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Finanseed/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Finanseed/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Finanseed/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finanseed.Api/Controllers/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Finanseed.Api/Controllers/UserController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finanseed.Api/Finanseed.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Finanseed.Api/Finanseed.Api.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finanseed.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Finanseed.Api/Program.cs" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1420116457">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cs" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="C#" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cs" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="C#" value="4" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Finanseed.Api/Startup.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-624">
+              <folding>
+                <marker date="1537968697671" expanded="true" signature="6:393" ph="..." />
+                <marker date="1537968697671" expanded="true" signature="418:4421" ph="{...}" />
+                <marker date="1537968697671" expanded="true" signature="425:466" ph="///  ... " />
+                <marker date="1537968697671" expanded="true" signature="491:4419" ph="{...}" />
+                <marker date="1537968697671" expanded="true" signature="506:587" ph="///  ... " />
+                <marker date="1537968697671" expanded="true" signature="662:760" ph="///  ... " />
+                <marker date="1537968697671" expanded="true" signature="813:876" ph="{...}" />
+                <marker date="1537968697671" expanded="true" signature="885:978" ph="///  ... " />
+                <marker date="1537968697671" expanded="true" signature="1045:3745" ph="{...}" />
+                <marker date="1537968697671" expanded="true" signature="1512:2108" ph="{...}" />
+                <marker date="1537968697671" expanded="true" signature="1590:1910" ph="{...}" />
+                <marker date="1537968697671" expanded="true" signature="2165:2382" ph="{...}" />
+                <marker date="1537968697671" expanded="true" signature="2413:3297" ph="{...}" />
+                <marker date="1537968697671" expanded="true" signature="3008:3223" ph="/* Tempo de tolerância para a expiração de um token (utilizado ... */" />
+                <marker date="1537968697671" expanded="true" signature="3313:3409" ph="/* Ativa o uso do token como forma de autorizar o acesso ... */" />
+                <marker date="1537968697671" expanded="true" signature="3455:3701" ph="{...}" />
+                <marker date="1537968697671" expanded="true" signature="3862:3989" ph="///  ... " />
+                <marker date="1537968697671" expanded="true" signature="4069:4413" ph="{...}" />
+                <marker date="1537968697671" expanded="true" signature="4263:4374" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Finanseed.Api/Program.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+              <folding>
+                <marker date="1537969616478" expanded="true" signature="6:269" ph="..." />
+                <marker date="1537969616478" expanded="true" signature="294:1017" ph="{...}" />
+                <marker date="1537969616478" expanded="true" signature="301:342" ph="///  ... " />
+                <marker date="1537969616478" expanded="true" signature="367:1015" ph="{...}" />
+                <marker date="1537969616478" expanded="true" signature="382:471" ph="///  ... " />
+                <marker date="1537969616478" expanded="true" signature="518:705" ph="{...}" />
+                <marker date="1537969616478" expanded="true" signature="625:695" ph="{...}" />
+                <marker date="1537969616478" expanded="true" signature="714:835" ph="///  ... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Finanseed.Api/Controllers/ApiController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1248">
+              <folding>
+                <marker date="1537968697662" expanded="false" signature="6:148" ph="..." />
+                <marker date="1537968697662" expanded="true" signature="185:2217" ph="{...}" />
+                <marker date="1537968697662" expanded="true" signature="192:233" ph="///  ... " />
+                <marker date="1537968697662" expanded="true" signature="277:2215" ph="{...}" />
+                <marker date="1537968697662" expanded="true" signature="292:341" ph="///  ... " />
+                <marker date="1537968697662" expanded="true" signature="402:483" ph="///  ... " />
+                <marker date="1537968697662" expanded="true" signature="525:588" ph="{...}" />
+                <marker date="1537968697662" expanded="true" signature="597:720" ph="///  ... " />
+                <marker date="1537968697662" expanded="true" signature="787:1178" ph="{...}" />
+                <marker date="1537968697662" expanded="true" signature="833:999" ph="{...}" />
+                <marker date="1537968697662" expanded="true" signature="894:983" ph="{...}" />
+                <marker date="1537968697662" expanded="true" signature="1047:1166" ph="{...}" />
+                <marker date="1537968697662" expanded="true" signature="1187:1236" ph="///  ... " />
+                <marker date="1537968697662" expanded="true" signature="1284:1592" ph="{...}" />
+                <marker date="1537968697662" expanded="true" signature="1403:1582" ph="{...}" />
+                <marker date="1537968697662" expanded="true" signature="1601:1733" ph="///  ... " />
+                <marker date="1537968697662" expanded="true" signature="1797:1881" ph="{...}" />
+                <marker date="1537968697662" expanded="true" signature="1890:1981" ph="///  ... " />
+                <marker date="1537968697662" expanded="true" signature="2045:2209" ph="{...}" />
+                <marker date="1537968697662" expanded="true" signature="2104:2199" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Finanseed.Api/Controllers/AuthController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1656">
+              <folding>
+                <marker date="1537968697663" expanded="false" signature="6:426" ph="..." />
+                <marker date="1537968697663" expanded="true" signature="463:3309" ph="{...}" />
+                <marker date="1537968697663" expanded="true" signature="470:511" ph="///  ... " />
+                <marker date="1537968697663" expanded="true" signature="576:3307" ph="{...}" />
+                <marker date="1537968697663" expanded="true" signature="644:741" ph="///  ... " />
+                <marker date="1537968697663" expanded="true" signature="798:860" ph="{...}" />
+                <marker date="1537968697663" expanded="true" signature="869:1110" ph="///  ... " />
+                <marker date="1537968697663" expanded="true" signature="1357:3301" ph="{...}" />
+                <marker date="1537968697663" expanded="true" signature="1452:1562" ph="{...}" />
+                <marker date="1537968697663" expanded="true" signature="1603:3087" ph="{...}" />
+                <marker date="1537968697663" expanded="true" signature="1770:2001" ph="{...}" />
+                <marker date="1537968697663" expanded="true" signature="2325:2672" ph="{...}" />
+                <marker date="1537968697663" expanded="true" signature="2782:3072" ph="{...}" />
+                <marker date="1537968697663" expanded="true" signature="3104:3291" ph="{...}" />
+                <marker date="1537968697663" expanded="true" signature="3162:3276" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Finanseed.Api/Controllers/FinancialTransactionController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <marker date="1537968697664" expanded="true" signature="35:170" ph="{...}" />
+                <marker date="1537968697664" expanded="true" signature="42:83" ph="///  ... " />
+                <marker date="1537968697664" expanded="true" signature="147:168" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Finanseed.Api/Controllers/HomeController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <marker date="1537968697665" expanded="true" signature="68:407" ph="{...}" />
+                <marker date="1537968697665" expanded="true" signature="75:116" ph="///  ... " />
+                <marker date="1537968697665" expanded="true" signature="161:405" ph="{...}" />
+                <marker date="1537968697665" expanded="true" signature="176:257" ph="///  ... " />
+                <marker date="1537968697665" expanded="true" signature="324:399" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Finanseed.Api/Controllers/UserController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="42" column="37" lean-forward="true" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+              <folding>
+                <marker date="1537969822155" expanded="true" signature="6:290" ph="..." />
+                <marker date="1537969822155" expanded="true" signature="327:1682" ph="{...}" />
+                <marker date="1537969822155" expanded="true" signature="334:390" ph="/// User Controller ... " />
+                <marker date="1537969822155" expanded="true" signature="455:1680" ph="{...}" />
+                <marker date="1537969822155" expanded="true" signature="521:678" ph="/// UserController constructor method ... " />
+                <marker date="1537969822155" expanded="true" signature="733:785" ph="{...}" />
+                <marker date="1537969822155" expanded="true" signature="794:971" ph="///     Register a new User ... " />
+                <marker date="1537969822155" expanded="true" signature="1086:1326" ph="{...}" />
+                <marker date="1537969822155" expanded="true" signature="1112:1195" ph="{...}" />
+                <marker date="1537969822155" expanded="true" signature="1227:1316" ph="{...}" />
+                <marker date="1537969822155" expanded="true" signature="1336:1515" ph="/// Return User's information ... " />
+                <marker date="1537969822155" expanded="true" signature="1618:1674" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Finanseed.Api/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Finanseed.Api/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Finanseed.Api/Controllers/ApiController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Finanseed.Api/Controllers/AuthController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Finanseed.Api/Controllers/FinancialTransactionController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Finanseed.Api/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Finanseed.Api/Controllers/UserController.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Finanseed.Api/Program.cs" />
+        <option value="$PROJECT_DIR$/Finanseed.Api/Controllers/UserController.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="70" />
+    <option name="width" value="938" />
+    <option name="height" value="1088" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Finanseed" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Finanseed" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Finanseed.Api" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Finanseed" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Finanseed.Api" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Controllers" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="FileSystemExplorer" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+      <browser url="http://localhost:5000" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eef502bf-dd9b-474e-af5c-4a2a17a90175" name="Default Changelist" comment="" />
+      <created>1537969277265</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1537969277265</updated>
+      <workItem from="1537969278441" duration="545000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="545000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="NuGet" visible="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" />
+      <window_info anchor="bottom" id="REST Client" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Errors In Solution" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Finanseed.Api/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-624">
+          <folding>
+            <marker date="1537968697671" expanded="true" signature="6:393" ph="..." />
+            <marker date="1537968697671" expanded="true" signature="418:4421" ph="{...}" />
+            <marker date="1537968697671" expanded="true" signature="425:466" ph="///  ... " />
+            <marker date="1537968697671" expanded="true" signature="491:4419" ph="{...}" />
+            <marker date="1537968697671" expanded="true" signature="506:587" ph="///  ... " />
+            <marker date="1537968697671" expanded="true" signature="662:760" ph="///  ... " />
+            <marker date="1537968697671" expanded="true" signature="813:876" ph="{...}" />
+            <marker date="1537968697671" expanded="true" signature="885:978" ph="///  ... " />
+            <marker date="1537968697671" expanded="true" signature="1045:3745" ph="{...}" />
+            <marker date="1537968697671" expanded="true" signature="1512:2108" ph="{...}" />
+            <marker date="1537968697671" expanded="true" signature="1590:1910" ph="{...}" />
+            <marker date="1537968697671" expanded="true" signature="2165:2382" ph="{...}" />
+            <marker date="1537968697671" expanded="true" signature="2413:3297" ph="{...}" />
+            <marker date="1537968697671" expanded="true" signature="3008:3223" ph="/* Tempo de tolerância para a expiração de um token (utilizado ... */" />
+            <marker date="1537968697671" expanded="true" signature="3313:3409" ph="/* Ativa o uso do token como forma de autorizar o acesso ... */" />
+            <marker date="1537968697671" expanded="true" signature="3455:3701" ph="{...}" />
+            <marker date="1537968697671" expanded="true" signature="3862:3989" ph="///  ... " />
+            <marker date="1537968697671" expanded="true" signature="4069:4413" ph="{...}" />
+            <marker date="1537968697671" expanded="true" signature="4263:4374" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Finanseed.Api/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+          <folding>
+            <marker date="1537969616478" expanded="true" signature="6:269" ph="..." />
+            <marker date="1537969616478" expanded="true" signature="294:1017" ph="{...}" />
+            <marker date="1537969616478" expanded="true" signature="301:342" ph="///  ... " />
+            <marker date="1537969616478" expanded="true" signature="367:1015" ph="{...}" />
+            <marker date="1537969616478" expanded="true" signature="382:471" ph="///  ... " />
+            <marker date="1537969616478" expanded="true" signature="518:705" ph="{...}" />
+            <marker date="1537969616478" expanded="true" signature="625:695" ph="{...}" />
+            <marker date="1537969616478" expanded="true" signature="714:835" ph="///  ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Finanseed.Api/Controllers/ApiController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1248">
+          <folding>
+            <marker date="1537968697662" expanded="false" signature="6:148" ph="..." />
+            <marker date="1537968697662" expanded="true" signature="185:2217" ph="{...}" />
+            <marker date="1537968697662" expanded="true" signature="192:233" ph="///  ... " />
+            <marker date="1537968697662" expanded="true" signature="277:2215" ph="{...}" />
+            <marker date="1537968697662" expanded="true" signature="292:341" ph="///  ... " />
+            <marker date="1537968697662" expanded="true" signature="402:483" ph="///  ... " />
+            <marker date="1537968697662" expanded="true" signature="525:588" ph="{...}" />
+            <marker date="1537968697662" expanded="true" signature="597:720" ph="///  ... " />
+            <marker date="1537968697662" expanded="true" signature="787:1178" ph="{...}" />
+            <marker date="1537968697662" expanded="true" signature="833:999" ph="{...}" />
+            <marker date="1537968697662" expanded="true" signature="894:983" ph="{...}" />
+            <marker date="1537968697662" expanded="true" signature="1047:1166" ph="{...}" />
+            <marker date="1537968697662" expanded="true" signature="1187:1236" ph="///  ... " />
+            <marker date="1537968697662" expanded="true" signature="1284:1592" ph="{...}" />
+            <marker date="1537968697662" expanded="true" signature="1403:1582" ph="{...}" />
+            <marker date="1537968697662" expanded="true" signature="1601:1733" ph="///  ... " />
+            <marker date="1537968697662" expanded="true" signature="1797:1881" ph="{...}" />
+            <marker date="1537968697662" expanded="true" signature="1890:1981" ph="///  ... " />
+            <marker date="1537968697662" expanded="true" signature="2045:2209" ph="{...}" />
+            <marker date="1537968697662" expanded="true" signature="2104:2199" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Finanseed.Api/Controllers/AuthController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1656">
+          <folding>
+            <marker date="1537968697663" expanded="false" signature="6:426" ph="..." />
+            <marker date="1537968697663" expanded="true" signature="463:3309" ph="{...}" />
+            <marker date="1537968697663" expanded="true" signature="470:511" ph="///  ... " />
+            <marker date="1537968697663" expanded="true" signature="576:3307" ph="{...}" />
+            <marker date="1537968697663" expanded="true" signature="644:741" ph="///  ... " />
+            <marker date="1537968697663" expanded="true" signature="798:860" ph="{...}" />
+            <marker date="1537968697663" expanded="true" signature="869:1110" ph="///  ... " />
+            <marker date="1537968697663" expanded="true" signature="1357:3301" ph="{...}" />
+            <marker date="1537968697663" expanded="true" signature="1452:1562" ph="{...}" />
+            <marker date="1537968697663" expanded="true" signature="1603:3087" ph="{...}" />
+            <marker date="1537968697663" expanded="true" signature="1770:2001" ph="{...}" />
+            <marker date="1537968697663" expanded="true" signature="2325:2672" ph="{...}" />
+            <marker date="1537968697663" expanded="true" signature="2782:3072" ph="{...}" />
+            <marker date="1537968697663" expanded="true" signature="3104:3291" ph="{...}" />
+            <marker date="1537968697663" expanded="true" signature="3162:3276" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Finanseed.Api/Controllers/FinancialTransactionController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1537968697664" expanded="true" signature="35:170" ph="{...}" />
+            <marker date="1537968697664" expanded="true" signature="42:83" ph="///  ... " />
+            <marker date="1537968697664" expanded="true" signature="147:168" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Finanseed.Api/Controllers/HomeController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1537968697665" expanded="true" signature="68:407" ph="{...}" />
+            <marker date="1537968697665" expanded="true" signature="75:116" ph="///  ... " />
+            <marker date="1537968697665" expanded="true" signature="161:405" ph="{...}" />
+            <marker date="1537968697665" expanded="true" signature="176:257" ph="///  ... " />
+            <marker date="1537968697665" expanded="true" signature="324:399" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Finanseed.Api/Controllers/UserController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="42" column="37" lean-forward="true" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+          <folding>
+            <marker date="1537969822155" expanded="true" signature="6:290" ph="..." />
+            <marker date="1537969822155" expanded="true" signature="327:1682" ph="{...}" />
+            <marker date="1537969822155" expanded="true" signature="334:390" ph="/// User Controller ... " />
+            <marker date="1537969822155" expanded="true" signature="455:1680" ph="{...}" />
+            <marker date="1537969822155" expanded="true" signature="521:678" ph="/// UserController constructor method ... " />
+            <marker date="1537969822155" expanded="true" signature="733:785" ph="{...}" />
+            <marker date="1537969822155" expanded="true" signature="794:971" ph="///     Register a new User ... " />
+            <marker date="1537969822155" expanded="true" signature="1086:1326" ph="{...}" />
+            <marker date="1537969822155" expanded="true" signature="1112:1195" ph="{...}" />
+            <marker date="1537969822155" expanded="true" signature="1227:1316" ph="{...}" />
+            <marker date="1537969822155" expanded="true" signature="1336:1515" ph="/// Return User's information ... " />
+            <marker date="1537969822155" expanded="true" signature="1618:1674" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

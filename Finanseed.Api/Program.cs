@@ -7,6 +7,7 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using Sentry;
 
 namespace Finanseed.Api
 {
@@ -21,7 +22,10 @@ namespace Finanseed.Api
         /// <param name="args"></param>
         public static void Main(string[] args)
         {
-            BuildWebHost(args).Run();
+            using (SentrySdk.Init("https://6b40996029fd438f89fa1d3d674fcbe9@sentry.io/1288927"))
+            {
+                BuildWebHost(args).Run();
+            }
         }
         /// <summary>
         /// 

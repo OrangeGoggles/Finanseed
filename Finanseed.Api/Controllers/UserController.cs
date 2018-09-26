@@ -1,12 +1,8 @@
 using System;
-using System.Collections.Generic;
 using Finanseed.Application.Interfaces;
 using Finanseed.Application.ViewModels;
-using Finanseed.Domain.Commands;
-using Finanseed.Domain.Entities;
-using Finanseed.Domain.Handlers;
-using Finanseed.Domain.Results;
 using Microsoft.AspNetCore.Mvc;
+using Sentry;
 
 namespace Finanseed.Api.Controllers
 {
@@ -34,7 +30,15 @@ namespace Finanseed.Api.Controllers
         [Produces("application/json")]
         public UserViewModel Post(UserViewModel command)
         {
-            return _service.RegisterUser(command);
+            try
+            {
+                return _service.RegisterUser(command);
+            }
+            catch (Exception e)
+            {
+                SentrySdk.CaptureException(e);
+                throw;
+            }
         }
 
         /// <summary>
@@ -45,7 +49,15 @@ namespace Finanseed.Api.Controllers
         [HttpGet]
         [Produces("application/json")]
         public UserViewModel Get(Guid userID){
-            return _service.GetUser(userID);
+            try
+            {
+                return _service.GetUser(userID);
+            }
+            catch (Exception e)
+            {
+                SentrySdk.CaptureException(e);
+                throw;
+            }
         }
     }
 }
